@@ -1,1 +1,90 @@
 
+:root {
+--color-black-primary: #141414;
+--color-grey-primary: #242424;
+--color-white-primary: #FFFFFF;
+--coloro-purple-primary: #201D48;
+--color-text-black1: #2C2C2C;
+--color-text-black2: #000000;
+--color-text-white1: #F2F2F2;
+--button-shade1: #636363;
+--button-shade2: #0000008A;
+--background-color-orange: #F47D20;
+--color-background-playzone: #ABD9FF;
+--blu-compraora: #005AD2;
+--orange-footer: #E96F14;
+--red-new: #D0021B;
+---yellow-minibanner: #FFD502;
+--yellow-star: #fac400;
+
+}
+
+
+.banner {
+
+   height: 4.6875rem;
+    margin: 0px auto;
+    padding: 0px 1.875rem;
+    width: 100%;
+    max-width: 100rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: var(---yellow-minibanner);
+
+
+
+}
+
+.sopra {
+  display: flex;
+   justify-content: flex-end;
+   align-items: center;
+    
+}
+
+
+
+
+.navBanner{
+display: flex;
+
+
+}
+
+.navBanner ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    color: var(--button-shade2);
+   
+}
+
+.navBanner ul li:last-child{
+
+    text-transform: uppercase;
+    padding: 0.3125rem 1.25rem;
+    border-radius: 4px;
+    color: rgb(208, 2, 27);
+    background: rgb(255, 255, 255);
+
+
+}
+
+.esclusivo {
+
+background-color: var(---yellow-minibanner);
+ color: var(--color-black-primary);
+    letter-spacing: .01em;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1.62;
+    align-items: center;
+    min-width: max-content;
+    margin: 0;
+    display: inline-flex;
+      font-family: sans-serif;
+}
+
+
+
