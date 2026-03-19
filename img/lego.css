@@ -42,7 +42,12 @@
     
 }
 
+.nave{
 
+    background-image: url("home.jpg");
+    
+
+}
 
 
 .navBanner{
@@ -125,4 +130,25 @@ ol {
     background-color: #F2F2F2;
  margin: 1rem;
  padding: 1.25re,1rem;
+}
+
+.fine {
+    background-color: var(--coloro-purple-primary);
+    color: var(--color-text-white1);
+}
+
+.evidenza {
+        justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search {
+    
+    padding: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.25rem;
 }
