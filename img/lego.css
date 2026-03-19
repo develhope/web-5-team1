@@ -1,4 +1,5 @@
 
+
 :root {
 --color-black-primary: #141414;
 --color-grey-primary: #242424;
@@ -31,7 +32,7 @@
     -webkit-box-align: center;
     align-items: center;
     background: var(---yellow-minibanner);
-
+    
 
 
 }
@@ -43,7 +44,12 @@
     
 }
 
+.nave{
 
+    background-image: url("home.jpg");
+    
+
+}
 
 
 .navBanner{
@@ -57,10 +63,17 @@ display: flex;
     gap: 10px;
     list-style: none;
     color: var(--button-shade2);
+    
    
 }
 
-.navBanner ul li:last-child{
+.navBanner ul li a{
+color: var(--color-text-black2);
+text-decoration: none;
+
+}
+
+.navBanner ul li:last-child a{
 
     text-transform: uppercase;
     padding: 0.3125rem 1.25rem;
@@ -88,3 +101,56 @@ background-color: var(---yellow-minibanner);
 
 
 
+.firstButton{
+        box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    display: flex;
+
+}
+
+
+.sfondo1{
+    background-color: var(--color-black-primary
+);
+
+}
+.legobanner{
+background-color: var(--color-black-primary);
+
+}
+
+ol {
+      display: inline-flex;
+      gap: 10px;
+    list-style-type: none;
+   
+}
+
+.descrizione1 {
+    background-color: #F2F2F2;
+ margin: 1rem;
+ padding: 1.25re,1rem;
+}
+
+.fine {
+    background-color: var(--coloro-purple-primary);
+    color: var(--color-text-white1);
+}
+
+.evidenza {
+        justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search {
+    
+    padding: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.25rem;
+}
