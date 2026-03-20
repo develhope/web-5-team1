@@ -35,6 +35,18 @@
   align-items: center;
 }
 
+.nave{
+
+    background-image: url("home.jpg");
+    
+
+}
+
+
+.navBanner{
+display: flex;
+
+
 .navBanner {
   display: flex;
 }
@@ -270,4 +282,25 @@ ol {
   color: var(--color-white-primary);
   background-color: var(--button-shade1);
   text-decoration: underline;
+}
+
+.fine {
+    background-color: var(--coloro-purple-primary);
+    color: var(--color-text-white1);
+}
+
+.evidenza {
+        justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search {
+    
+    padding: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.25rem;
 }
