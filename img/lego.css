@@ -1,27 +1,26 @@
 :root {
-    --color-black-primary: #141414;
-    --color-grey-primary: #242424;
-    --color-white-primary: #FFFFFF;
-    --coloro-purple-primary: #201D48;
-    --color-text-black1: #2C2C2C;
-    --color-text-black2: #000000;
-    --color-text-white1: #F2F2F2;
-    --button-shade1: #636363;
-    --button-shade2: #0000008A;
-    --background-color-orange: #F47D20;
-    --color-background-playzone: #ABD9FF;
-    --blu-compraora: #005AD2;
-    --orange-footer: #E96F14;
-    --red-new: #D0021B;
-    ---yellow-minibanner: #FFD502;
-    --yellow-star: #fac400;
+--color-black-primary: #141414;
+--color-grey-primary: #242424;
+--color-white-primary: #FFFFFF;
+--coloro-purple-primary: #201D48;
+--color-text-black1: #2C2C2C;
+--color-text-black2: #000000;
+--color-text-white1: #F2F2F2;
+--button-shade1: #636363;
+--button-shade2: #0000008A;
+--background-color-orange: #F47D20;
+--color-background-playzone: #ABD9FF;
+--blu-compraora: #005AD2;
+--orange-footer: #E96F14;
+--red-new: #D0021B;
+---yellow-minibanner: #FFD502;
+--yellow-star: #fac400;
 
 }
 
-
 .banner {
 
-    height: 4.6875rem;
+   height: 4.6875rem;
     margin: 0px auto;
     padding: 0px 1.875rem;
     width: 100%;
@@ -30,48 +29,48 @@
     -webkit-box-align: center;
     align-items: center;
     background: var(---yellow-minibanner);
-
+    
 
 
 }
 
 .sopra {
-    display: flex;
+  display: flex;
+   justify-content: flex-end;
+   align-items: center;
     
-    align-items: center;
-
 }
 
-.nave {
+.nave{
 
     background-image: url("home.jpg");
+    
+
+}
+
+
+.navBanner{
+display: flex;
 
 
 }
 
-
-.navBanner {
-    display: flex;
-
-
-}
-
-.navBanner ul {
+.navBanner ul{
     display: flex;
     gap: 10px;
     list-style: none;
     color: var(--button-shade2);
+    
+   
+}
 
+.navBanner ul li a{
+color: var(--color-text-black2);
+text-decoration: none;
 
 }
 
-.navBanner ul li a {
-    color: var(--color-text-black2);
-    text-decoration: none;
-
-}
-
-.navBanner ul li:last-child a {
+.navBanner ul li:last-child a{
 
     text-transform: uppercase;
     padding: 0.3125rem 1.25rem;
@@ -84,8 +83,8 @@
 
 .esclusivo {
 
-    background-color: var(---yellow-minibanner);
-    color: var(--color-black-primary);
+background-color: var(---yellow-minibanner);
+ color: var(--color-black-primary);
     letter-spacing: .01em;
     font-size: .75rem;
     font-weight: 500;
@@ -94,13 +93,13 @@
     min-width: max-content;
     margin: 0;
     display: inline-flex;
-    font-family: sans-serif;
+      font-family: sans-serif;
 }
 
 
 
-.firstButton {
-    box-sizing: border-box;
+.firstButton{
+        box-sizing: border-box;
     justify-content: center;
     align-items: center;
     width: max-content;
@@ -109,79 +108,46 @@
 }
 
 
-.sfondo1 {
-    background-color: var(--color-black-primary);
+.sfondo1{
+    background-color: var(--color-black-primary
+);
 
 }
-
-.legobanner {
-    background-color: var(--color-black-primary);
+.legobanner{
+background-color: var(--color-black-primary);
 
 }
 
 ol {
-    display: inline-flex;
-    gap: 10px;
+      display: inline-flex;
+      gap: 10px;
     list-style-type: none;
-
+   
 }
 
 .descrizione1 {
     background-color: #F2F2F2;
-    margin: 1rem;
-    padding: 1.25re, 1rem;
+ margin: 1rem;
+ padding: 1.25re,1rem;
 }
 
 .fine {
-    background-color: var(--coloro-purple-primary);
-    color: var(--color-text-white1);
+  background-color: var(--coloro-purple-primary);
+  color: var(--color-text-white1);
 }
 
 .evidenza {
-    justify-content: center;
+        justify-content: center;
     margin: 0 auto;
     text-align: center;
 }
 
 .search {
-
+    
     padding: 0px;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 1.25rem;
-}
-.playZone{
-    font-family: "Cera Pro", sans-serif;
-    background-color: #ABD9FF;
-  color: black;
-  border: none;
-  padding: 6px 14px;           
-  border-radius: 6px;
-  font-size: 10px;
-  font-weight: 500;
- box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-  }
-
-.sopraa{
-    display: flex;
-    justify-content:space-between ;
-margin: auto;
-padding: auto;
-}
-.buy{
-    color:#005AD2;   
-    margin-bottom: auto;
-    padding: auto;
-}
-.buy:hover{
-    text-decoration: underline;
-}
-
-.frecceS{
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    padding: auto;
 }
