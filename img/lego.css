@@ -37,7 +37,7 @@
 }
 
 .nave {
-  background-image: url("home.jpg");
+  background-image: url("barcaa.webp");
 }
 
 .navBanner {
@@ -89,7 +89,6 @@
 .sfondo1 {
   background-color: var(--color-black-primary);
 }
-
 .legobanner {
   background-color: var(--color-black-primary);
 }
@@ -104,6 +103,14 @@ ol {
   background-color: #f2f2f2;
   margin: 1rem;
   padding: 1.25re, 1rem;
+}
+
+/* parte delle card */
+.card {
+  display: flex;
+    position: relative;
+    flex-direction: column;
+
 }
 
 /*PARTE DELLE FOTO A GRIGLIA*/
@@ -671,38 +678,7 @@ ol {
   flex-direction: column;
   gap: 8px;
 }
-.playZone{
-    font-family: "Cera Pro", sans-serif;
-    background-color: #ABD9FF;
-    color: black;
-    border: none;
-    padding: 6px 14px;           
-    border-radius: 6px;
-    font-size: 10px;
-    font-weight: 500;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-}
 
-.sopraa{
-    display: flex;
-    justify-content:space-between ;
-    margin: auto;
-    padding: auto;
-}
-
-.buy{
-    color:#005AD2;   
-    margin-bottom: auto;
-    padding: auto;
-}
-
-.buy:hover{
-    text-decoration: underline;
-}
-
-.frecceS{
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    padding: auto;
+.borsasopra{
+  
 }
