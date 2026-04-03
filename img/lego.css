@@ -105,26 +105,251 @@ ol {
   padding: 1.25re, 1rem;
 }
 
-/* parte delle card */
-.card {
-  display: flex;
-    position: relative;
-    flex-direction: column;
 
+/* Sezione set perfetto */
+
+/* SEZIONE GENERALE */
+.setPerfetto {
+  padding: 40px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-.arancio {
-  justify-content: center;
+/* TITOLO */
+.setPerfetto_titolo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.setPerfetto_titolo h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* SCELTA */
+.setPerfetto_scelta {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+/* CATEGORIE */
+.setPerfetto_scelta_titoli {
+  display: flex;
+  gap: 20px;
+}
+
+.setPerfetto_categorie {
+  font-weight: 600;
+  color: var(--button-shade1);
+  cursor: pointer;
+  padding-bottom: 8px;
+  font-size: 20px;
+}
+
+.setPerfetto_categorie:hover {
+  color: var(--button-shade1);
+  border-bottom: 3px solid var(--button-shade1);
+}
+
+.setPerfetto_categorie_1 {
+  color: var(--button-shade1);
+  border-bottom: 3px solid var(--button-shade1);
+  font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 8px;
+  font-size: 20px;
+}
+
+/* FRECCE */
+.setPerfetto_scelta_frecce {
+  display: flex;
+  gap: 10px;
+}
+
+.freccia_sinistra {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.freccia_destra {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--button-shade1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.freccia_destra:hover {
+  background-color: var(--button-shade1);
+}
+
+.freccia_destra:hover img{
+  filter: brightness(0) invert(1);
+}
+
+
+/* LISTA CARD */
+.sezione_cardList {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+/* CARD */
+
+.cardList_card {
+  width: 290px; /* 🔥 fissa la larghezza */
+  height: auto;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER CARD */
+.card_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CUORE */
+.card_head_cuore {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
   cursor: pointer;
   display: flex;
-  background-color: var(--background-color-orange);
-  border-radius: 1.125rem;
-  background-clip: padding-box;
-color: #000000;
-gap: .75rem;
- 
+  align-items: center;
+  justify-content: center;
 }
+
+.card_head_cuore:hover{
+  background-color: #c0c0c0;
+}
+
+.card_head_cuore_img {
+  width: 18px;
+}
+
+/* ETICHETTA */
+.card_head_giallo {
+  background-color: #ffd502;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+/* card body*/
+
+.card_body {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  gap: 12px;
+  height: auto;
+  justify-content: space-between;
+}
+
+/* IMMAGINE */
+.card_img {
+  height: 180px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*margin: 20px 0;*/
+  width: 100%;
+  overflow: hidden;
+}
+
+.card_img img {
+  width: 100%;
+  max-width: auto;
+  height: 100%;
+  object-fit: scale-down;
+  cursor: pointer;
+}
+
+/* ATTRIBUTI */
+.card_attributi {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 550;
+  color: #555;
+}
+
+.icone {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icone img {
+  width: 18px;
+}
+
+.icone_stella {
+  filter: invert(74%) sepia(92%) saturate(600%) hue-rotate(5deg);
+}
+
+
+/* TITOLO CARD */
+.card_titolo h2 {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card_titolo :hover{
+  text-decoration: underline;
+}
+
+/* PREZZO */
+.card_prezzo {
+  font-weight: 500;
+}
+
+/* BOTTONE */
+.button_arancio {
+  background-color: #f47d20;
+  color: black;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 550;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button_arancio_img {
+  width: 16px;
+}
+
+/* HOVER */
+.button_arancio:hover {
+  background-color: #e56f15;
+}
+
+
+
+
 
 /*PARTE DELLE FOTO A GRIGLIA*/
 .evidenza_griglia {
@@ -232,7 +457,7 @@ gap: .75rem;
 }
 
 .popup_exit:hover {
-  background-color: var(--gray-bg) ;
+  background-color: var(--gray-bg);
 }
 
 .popup_freccia {
@@ -350,6 +575,7 @@ gap: .75rem;
   padding-bottom: 12px;
   margin: 0;
   letter-spacing: normal;
+  display: inline;
 }
 
 .tentazione_bottoni {
@@ -391,7 +617,6 @@ gap: .75rem;
 }
 
 /*Parte 3 card */
-
 
 html {
   box-sizing: border-box;
@@ -586,9 +811,7 @@ a {
   border-radius: 1.25rem;
 }
 
-
 /* Sezione bAnner */
-
 
 .bAnner {
   display: flex;
@@ -606,14 +829,13 @@ a {
   height: 25vh;
 }
 
-
 .bAnner_testo {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .bAnner_testo_head {
@@ -653,9 +875,7 @@ a {
   text-decoration: underline;
 }
 
-
 /* sezione descrizione1 */
-
 
 .descrizione1 {
   display: flex;
@@ -674,14 +894,12 @@ a {
   margin: 0 14px;
 }
 
-
 /* Sezione footer */
 
 .fine {
   margin-top: auto;
   min-height: 90vh;
 }
-
 
 .footer {
   display: flex;
@@ -723,7 +941,6 @@ a {
   justify-content: flex-start;
 }
 
-
 .footerList_scritta {
   font-size: 16px;
   padding: 10px 15px;
@@ -731,7 +948,6 @@ a {
 
 .footerList_link {
   color: var(--color-white-primary);
-
 }
 
 .footerList_link:hover {
@@ -760,7 +976,7 @@ a {
   background-color: rgb(24, 21, 45);
 }
 
-.footer_posizione_bottone img{
+.footer_posizione_bottone img {
   height: 30px;
   width: auto;
 }
@@ -773,21 +989,21 @@ a {
 
 .footer_contatti {
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
   justify-content: space-between;
   margin: 0 240px;
   max-width: 1320px;
 }
 
 .footer_contatti_titolo {
-  font-size: 16PX;
+  font-size: 16px;
   font-weight: 500;
-  margin-bottom: 20PX;
+  margin-bottom: 20px;
 }
 
 .footer_mail_button {
   padding: 0 18px;
-  border: none; 
+  border: none;
   background-color: var(--background-color-orange);
   display: flex;
   align-items: center;
@@ -800,14 +1016,14 @@ a {
 .footer_contatti_email {
   flex: 1;
   padding: 14px 12px;
-  border: none;        
-  outline: none; 
+  border: none;
+  outline: none;
 }
 
 .footer_mail form {
   display: flex;
-  align-items: stretch; 
-  overflow: hidden; 
+  align-items: stretch;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 
@@ -827,8 +1043,8 @@ a {
 
 .footerBottom ul {
   display: flex;
-  flex-wrap: wrap; 
-  gap: 16px; 
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .footerBottom li {
