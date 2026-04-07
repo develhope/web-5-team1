@@ -1,6 +1,6 @@
 :root {
   --color-black-primary: #141414;
-  --color-grey-primary:rgb(44, 44, 44)
+  --color-grey-primary: #242424;
   --color-white-primary: #ffffff;
   --coloro-purple-primary: #201d48;
   --color-text-black1: #2c2c2c;
@@ -18,17 +18,6 @@
   --gray-bg: rgb(172, 172, 172);
 }
 
-.banner {
-  height: 4.6875rem;
-  margin: 0px auto;
-  padding: 0px 1.875rem;
-  width: 100%;
-  max-width: 100rem;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  background: var(---yellow-minibanner);
-}
 
 .sopra {
   display: flex;
@@ -37,69 +26,244 @@
 }
 
 .nave {
-  background-image: url("barcaa.webp");
+  background-image: url("img/barcaa.webp");
+}
+.sopra {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 2.5rem;
+  font-size: 0.78rem;
+  box-sizing: border-box;
+  gap: 0.6rem;
+}
+
+.sopra a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.sopra a:hover {
+  text-decoration: underline;
+}
+
+.sopra p {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  color: #000000;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sopra a:nth-child(4) {
+  color: #00a9e0;
+  font-weight: 700;
+}
+
+.sopra a:nth-child(6) {
+  margin-left: auto;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sopra div {
+  display: flex;
+  align-items: center;
+}
+
+.sopra div a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* =====================
+   NAVBAR GIALLA
+   ===================== */
+.banner {
+  width: 100%;
+  background-color: #FFD700;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 5rem;
+  gap: 2.5rem;
+  box-sizing: border-box;
+}
+
+/* Logo sfondo rosso */
+.banner > img {
+  background-color: #D0021B;
+  padding: 8px;
+  border-radius: 4px;
+  height: 54px;
+  width: 54px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .navBanner {
   display: flex;
-   
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
 }
 
 .navBanner ul {
   display: flex;
-  gap: 10px;
+  gap: 2.5rem;
   list-style: none;
-  color: var(--button-shade2);
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 .navBanner ul li a {
-  color: var(--color-text-black2);
+  color: #000000;
   text-decoration: none;
-  margin: 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
+.navBanner ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Bottone Novità */
 .navBanner ul li:last-child a {
-  text-transform: uppercase;
-  padding: 0.3125rem 1.25rem;
+  padding: 0.4rem 1.2rem;
   border-radius: 4px;
   color: rgb(208, 2, 27);
-  background: rgb(255, 255, 255);
+  background: #ffffff;
+  border: 2px solid rgb(208, 2, 27);
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
+
+.navBanner ul li:last-child a:hover {
+  background: rgb(208, 2, 27);
+  color: #ffffff;
+}
+
+/* Search */
+.search {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1.5px solid #cccccc;
+  padding: 0.45rem 1rem;
+  gap: 0.5rem;
+  flex: 1;
+  max-width: 420px;
+  margin-left: auto;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  width: 100%;
+  background: transparent;
+}
+
+.search input::placeholder {
+  color: #999999;
+}
+
+/* Icone cuore e carrello */
+.navBanner form:not(.search) {
+  display: flex;
+  align-items: center;
+}
+
+.navBanner form:not(.search) a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.navBanner form:not(.search) a img {
+  height: 28px;
+  width: 28px;
+}
+
+.navBanner form:not(.search) a:hover {
+  opacity: 1;
+}
+
 
 .esclusivo {
   background-color: var(---yellow-minibanner);
   color: var(--color-black-primary);
-  letter-spacing: 0.01em;
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 1.62;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+align-items: center;
+ align-items: center;
   min-width: max-content;
   margin: 0;
   display: inline-flex;
-  font-family: sans-serif;
+  font-family:  'Cera Pro', sans-serif;
+font-size: 14px;
+font-weight: 500;
+height: 24px;
+width: 61.15px;
+padding-left: 12px;
+padding-right: 12px;
+
+
 }
 
 .firstButton {
-  box-sizing: border-box;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
-  width: max-content;
-  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Nunito', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 11px 24px;
+  border: 2px solid #636363;
+  border-radius: 999px;        /* pill shape */
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease, text-decoration 0.15s ease;
+  white-space: nowrap;
+  min-height: 44px;
 }
 
+.firstButton:hover {
+  background-color: #636363;
+  color: #ffffff;
+  text-decoration: underline;
+}
 .sfondo1 {
   background-color: var(--color-black-primary);
 }
-.lego-banner{
-  background-color: var(--color-grey-primary);
+.legobanner {
+  background-color: var(--color-black-primary);
 }
 
-.legobanner {
-  width: 100%;
-  display: block;
-  filter: brightness(0) invert(1);
-}
 ol {
   display: inline-flex;
   gap: 10px;
@@ -112,26 +276,252 @@ ol {
   padding: 1.25re, 1rem;
 }
 
-/* parte delle card */
-.card {
-  display: flex;
-    position: relative;
-    flex-direction: column;
 
+/* Sezione set perfetto */
+
+/* SEZIONE GENERALE */
+.setPerfetto {
+  padding: 40px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-.arancio {
-  justify-content: center;
+/* TITOLO */
+.setPerfetto_titolo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.setPerfetto_titolo h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* SCELTA */
+.setPerfetto_scelta {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+/* CATEGORIE */
+.setPerfetto_scelta_titoli {
+  display: flex;
+  gap: 20px;
+}
+
+.setPerfetto_categorie {
+  font-weight: 600;
+  color: var(--button-shade1);
+  cursor: pointer;
+  padding-bottom: 8px;
+  font-size: 20px;
+}
+
+.setPerfetto_categorie:hover {
+  color: var(--button-shade1);
+  border-bottom: 3px solid var(--button-shade1);
+}
+
+.setPerfetto_categorie_1 {
+  color: var(--button-shade1);
+  border-bottom: 3px solid var(--button-shade1);
+  font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 8px;
+  font-size: 20px;
+}
+
+/* FRECCE */
+.setPerfetto_scelta_frecce {
+  display: flex;
+  gap: 10px;
+}
+
+.freccia_sinistra {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.freccia_destra {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--button-shade1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.freccia_destra:hover {
+  background-color: var(--button-shade1);
+}
+
+.freccia_destra:hover img{
+  filter: brightness(0) invert(1);
+}
+
+
+/* LISTA CARD */
+.sezione_cardList {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+/* CARD */
+
+.cardList_card {
+  width: 290px; /* 🔥 fissa la larghezza */
+  height: auto;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER CARD */
+.card_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CUORE */
+.card_head_cuore {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
   cursor: pointer;
   display: flex;
-  background-color: var(--background-color-orange);
-  border-radius: 1.125rem;
-  background-clip: padding-box;
-color: #000000;
-gap: .75rem;
- 
+  align-items: center;
+  justify-content: center;
 }
+
+.card_head_cuore:hover{
+  background-color: #c0c0c0;
+}
+
+.card_head_cuore_img {
+  width: 18px;
+}
+
+/* ETICHETTA */
+.card_head_giallo {
+  background-color: #ffd502;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+/* card body*/
+
+.card_body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  height: auto;
+  justify-content: space-between;
+}
+
+/* IMMAGINE */
+.card_img {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*margin: 20px 0;*/
+  width: 100%;
+  overflow: hidden;
+}
+
+.card_img img {
+  width: 100%;
+  max-width: auto;
+  height: 100%;
+  object-fit: scale-down;
+  cursor: pointer;
+}
+
+/* ATTRIBUTI */
+.card_attributi {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 550;
+  color: #555;
+}
+
+.icone {
+  display: flex;
+
+  align-items: center;
+  gap: 4px;
+}
+
+.icone img {
+  width: 18px;
+}
+
+.icone_stella {
+  filter: invert(74%) sepia(92%) saturate(600%) hue-rotate(5deg);
+}
+
+
+/* TITOLO CARD */
+.card_titolo h2 {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card_titolo :hover{
+  text-decoration: underline;
+}
+
+/* PREZZO */
+.card_prezzo {
+  font-weight: 500;
+}
+
+/* BOTTONE */
+.button_arancio {
+  background-color: #f47d20;
+  color: black;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 550;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button_arancio_img {
+  width: 16px;
+}
+
+/* HOVER */
+.button_arancio:hover {
+  background-color: #e56f15;
+}
+
+
+
+
 
 /*PARTE DELLE FOTO A GRIGLIA*/
 .evidenza_griglia {
@@ -239,7 +629,7 @@ gap: .75rem;
 }
 
 .popup_exit:hover {
-  background-color: var(--gray-bg) ;
+  background-color: var(--gray-bg);
 }
 
 .popup_freccia {
@@ -282,7 +672,7 @@ gap: .75rem;
 
 .evidenza_momenti_body {
   position: relative;
-  background-image: url("bottonebrutto.png");
+  background-image: url("img/bottonebrutto.png");
   background-size: cover;
   background-position: center;
   height: 70vh;
@@ -357,6 +747,7 @@ gap: .75rem;
   padding-bottom: 12px;
   margin: 0;
   letter-spacing: normal;
+  display: inline;
 }
 
 .tentazione_bottoni {
@@ -398,7 +789,6 @@ gap: .75rem;
 }
 
 /*Parte 3 card */
-
 
 html {
   box-sizing: border-box;
@@ -584,10 +974,16 @@ a {
   text-align: center;
 }
 
-
+.search {
+  padding: 0px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.25rem;
+}
 
 /* Sezione bAnner */
-
 
 .bAnner {
   display: flex;
@@ -605,14 +1001,13 @@ a {
   height: 25vh;
 }
 
-
 .bAnner_testo {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .bAnner_testo_head {
@@ -652,9 +1047,7 @@ a {
   text-decoration: underline;
 }
 
-
 /* sezione descrizione1 */
-
 
 .descrizione1 {
   display: flex;
@@ -673,13 +1066,13 @@ a {
   margin: 0 14px;
 }
 
-
 /* Sezione footer */
 
 .fine {
   margin-top: auto;
   min-height: 90vh;
 }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -720,7 +1113,6 @@ a {
   justify-content: flex-start;
 }
 
-
 .footerList_scritta {
   font-size: 16px;
   padding: 10px 15px;
@@ -728,7 +1120,6 @@ a {
 
 .footerList_link {
   color: var(--color-white-primary);
-
 }
 
 .footerList_link:hover {
@@ -757,7 +1148,7 @@ a {
   background-color: rgb(24, 21, 45);
 }
 
-.footer_posizione_bottone img{
+.footer_posizione_bottone img {
   height: 30px;
   width: auto;
 }
@@ -770,21 +1161,21 @@ a {
 
 .footer_contatti {
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
   justify-content: space-between;
   margin: 0 240px;
   max-width: 1320px;
 }
 
 .footer_contatti_titolo {
-  font-size: 16PX;
+  font-size: 16px;
   font-weight: 500;
-  margin-bottom: 20PX;
+  margin-bottom: 20px;
 }
 
 .footer_mail_button {
   padding: 0 18px;
-  border: none; 
+  border: none;
   background-color: var(--background-color-orange);
   display: flex;
   align-items: center;
@@ -797,14 +1188,14 @@ a {
 .footer_contatti_email {
   flex: 1;
   padding: 14px 12px;
-  border: none;        
-  outline: none; 
+  border: none;
+  outline: none;
 }
 
 .footer_mail form {
   display: flex;
-  align-items: stretch; 
-  overflow: hidden; 
+  align-items: stretch;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 
@@ -824,8 +1215,8 @@ a {
 
 .footerBottom ul {
   display: flex;
-  flex-wrap: wrap; 
-  gap: 16px; 
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .footerBottom li {
@@ -844,91 +1235,107 @@ a {
   color: var(--color-white-primary);
   margin-bottom: 20px;
 }
-body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+
+.lego-banner-wrapper {
+  background-color: #242424;
 }
 
-.topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 20px;
-    position: relative;
+.lego-banner {
+  width: 100%;
+  display: block;
+  filter: invert(1);
 }
 
-.center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
+.trending {
+  padding: 40px 20px;
+  background-color: var(--color-grey-primary);
 }
 
-.riga {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.trending h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
-.riga p {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.2px;
-    line-height: 1.2;
-    white-space: nowrap;
-    text-align: center;
+/* Griglia orizzontale scrollabile */
+.trending-grid {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-.buy {
-    color: #005AD2;
-    font-size: 13px;
+.trending-grid::-webkit-scrollbar {
+  height: 4px;
 }
 
-.buy:hover {
-    text-decoration: underline;
+.trending-grid::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
 }
 
-.freccia {
-    height: 16px;
-    cursor: pointer;
+.trending-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
 }
 
-.right {
-    display: flex;
-    gap: 15px;
-    align-items: center;
+.trend-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 140px;
+  height: 200px;
+  border-radius: 12px;
+  cursor: pointer;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease;
+  /* clip-path invece di overflow:hidden — non taglia l'hover */
+  clip-path: inset(0 round 12px);
 }
 
-.playZone {
-    background-color: #ABD9FF;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 12px;
+.trend-card:hover {
+  transform: scale(1.05);
+  z-index: 1;
 }
 
-sup {
-    font-size: 8px;
-    vertical-align: super;
+.trend-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.lego-search:hover {
-  background: #eaeaea;
-  border-color: #cfcfcf;
+.trend-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+  pointer-events: none;
 }
 
-.search-icon {
-  width: 18px;
-  height: 18px;
-  color: #555;
+.trend-label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
-
-.lego-search input {
-  border: none;
-  background: transparent;
-  outline: none;
-  font-size: 14px;
-  width: 160px;
- }
+.white{
+    color:white
+}
+.areaGiochi{
+      background-color: #ABD9FF;
+     padding: 6px 12px;
+     border-radius: 6px;
+     font-size: 12px;
+}
