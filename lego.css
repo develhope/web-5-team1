@@ -1319,16 +1319,17 @@ a {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
   pointer-events: none;
 }
-
 .trend-label {
   position: absolute;
-  bottom: 12px;
-  left: 12px;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
   color: #fff;
   font-size: 0.85rem;
   font-weight: 700;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   z-index: 1;
+  white-space: nowrap;
 }
 .white{
     color:white
